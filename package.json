@@ -1,0 +1,37 @@
+{
+  "name": "viggen",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for Viggen Holdings (apps/web and packages/ui)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "dev": "cd apps/web && npm run dev",
+    "build": "cd apps/web && npm run build",
+    "start": "cd apps/web && npm run start",
+    "lint": "pnpm -w -r run lint || (cd apps/web && npm run lint)",
+    "format": "pnpm -w -r run format || (cd apps/web && npm run format)",
+    "test": "pnpm -w -r run test || (cd apps/web && npm run test)",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "viggen",
+    "monorepo",
+    "nextjs",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "Viggen Holdings",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
+  }
+}

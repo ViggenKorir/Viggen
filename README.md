@@ -1,2 +1,1 @@
-# Viggen
-Viggen Holdings Co.
+# Viggen Holdings Co.
